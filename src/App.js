@@ -1,6 +1,6 @@
 import logo from './assets/img/logo.png';
-import setaPlay from './assets/img/seta_play.png'
-
+import FooterConcluidos from './Footer-Concluidos';
+import Perguntas from './components/Perguntas'
 
 export default function App(){
   return (
@@ -9,18 +9,8 @@ export default function App(){
         <img src={logo} alt='logo'></img>
         <h1>Zaprecall</h1>
       </div>
-      <div className="pergunta-fechada">
-          <p>Pergunta 1</p>
-          <img src= {setaPlay} alt="setaplay"></img>
-        </div>
-      <div className="footer-concluidos ">
-        <div className="container-botoes">
-        <button>dsd</button>
-        <button>dsd</button>
-        <button>dsd</button>
-      </div>
-          <p>concluido</p>
-        </div>
+      <Perguntas/>
+      <FooterConcluidos/>
     </div>
   )
 } 
