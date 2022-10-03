@@ -7,9 +7,9 @@ export default function FlashCardComponent(props) {
       <></>
     )
   }
-  console.log(props)
+
   return(
-  <FlashCard onClick={()=>props.abrirPerguntaDoCard()}>
+  <FlashCard onClick={()=>props.abrirPerguntaDoCard(props.id)}>
     <div>Pergunta {props.id}</div>      
     <img src={setaPlay} alt="Seta Play"></img>
   </FlashCard>
