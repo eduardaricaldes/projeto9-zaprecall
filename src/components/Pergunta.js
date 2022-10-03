@@ -8,9 +8,12 @@ export default function Pergunta(props) {
   const [abrirPergunta, setAbrirPergunta]=useState(false)
   const [abrirResposta, setAbrirResposta]=useState(false)
 
-  function abrirPerguntaDoCard() {
+  function abrirPerguntaDoCard(id) {
+    const novoResultado = props.resultado + 1
+    props.setResultado(novoResultado)
     setAbrirFlashCard(false)
     setAbrirPergunta(true)
+    props.setPerguntaSelectionada(id)
   }
 
   function abrirRespostaDoCard() {
