@@ -79,6 +79,20 @@
   border: 1px solid blue;
   padding:5px;
 }
+.container-botoes button:nth-child(1) {
+  background: #FF3030;
+  border: #FF3030;
+}
+
+.container-botoes button:nth-child(2) {
+  background: #FF922E;
+  border: #FF922E;
+}
+
+.container-botoes button:nth-child(3) {
+  background: #2FBE34;
+  border: #2FBE34;
+}
 
 /* .pergunta-fechada {
   width: 300px;
